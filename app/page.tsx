@@ -1,4 +1,5 @@
 import MenuItem from './components/MenuItem';
+import ContactForm from './components/ContactForm';
 
 export default function Home() {
   return (
@@ -107,7 +108,75 @@ export default function Home() {
               image="/img/octopus.jpg"
             />
           </div>
+          {/*Contact form section*/}
+          {/* Contact Section */}
+          <section id="contact" className="py-20 px-4 bg-white">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-5xl font-bold text-center mb-4 text-gray-900">Reserve a Table</h2>
+              <p className="text-center text-gray-600 text-lg mb-12">
+                Have questions or want to make a reservation? We'd love to hear from you!
+              </p>
 
+              <div className="grid md:grid-cols-2 gap-12">
+                {/* Contact Info */}
+                <div className="space-y-8">
+                  <div>
+                    <h3 className="text-2xl font-bold mb-6 text-gray-900">Visit Us</h3>
+                    <div className="space-y-4">
+                      <div className="flex items-start">
+                        <div className="text-orange-600 mr-4 text-xl">📍</div>
+                        <div>
+                          <p className="font-semibold text-gray-900">Address</p>
+                          <p className="text-gray-600">Calle 34 Nte 43, Gonzalo Guerrero</p>
+                          <p className="text-gray-600">Playa del Carmen, Q.R. 77720</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start">
+                        <div className="text-orange-600 mr-4 text-xl">📞</div>
+                        <div>
+                          <p className="font-semibold text-gray-900">Phone</p>
+                          <p className="text-gray-600">(984) 123-4567</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start">
+                        <div className="text-orange-600 mr-4 text-xl">🕐</div>
+                        <div>
+                          <p className="font-semibold text-gray-900">Hours</p>
+                          <p className="text-gray-600">Monday - Sunday</p>
+                          <p className="text-gray-600">12:00 PM - 11:00 PM</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start">
+                        <div className="text-orange-600 mr-4 text-xl">✉️</div>
+                        <div>
+                          <p className="font-semibold text-gray-900">Email</p>
+                          <p className="text-gray-600">hello@zitlaceiba.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Social Links */}
+                  <div>
+                    <h3 className="text-xl font-bold mb-4 text-gray-900">Follow Us</h3>
+                    <div className="flex space-x-4">
+                      <a href="#" className="text-orange-600 hover:text-orange-700 text-2xl">📘</a>
+                      <a href="#" className="text-orange-600 hover:text-orange-700 text-2xl">📷</a>
+                      <a href="#" className="text-orange-600 hover:text-orange-700 text-2xl">⭐</a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Contact Form */}
+                <div>
+                  <ContactForm />
+                </div>
+              </div>
+            </div>
+          </section>
           {/* View Full Menu Button */}
           <div className="text-center mt-12">
             <a
