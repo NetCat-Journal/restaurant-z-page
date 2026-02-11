@@ -189,8 +189,61 @@ export default function Home() {
         </div>
       </section>
       {/* Footer */}
-      <footer className="bg-gray-900 text-white p-8 text-center">
-        <p>Footer</p>
+      <footer className="bg-gray-900 text-white py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            {/* About */}
+            <div>
+              <h3 className="text-2xl font-bold mb-4 text-orange-500">Zitla Ceiba</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Authentic Caribbean and Mexican cuisine in the heart of Playa del Carmen since 2010.
+              </p>
+            </div>
+
+            {/* Hours */}
+            <div>
+              <h4 className="text-lg font-bold mb-4">Hours</h4>
+              <div className="text-gray-400 space-y-2">
+                <p>Monday - Sunday</p>
+                <p className="font-semibold text-white">12:00 PM - 11:00 PM</p>
+                <p className="mt-4 text-sm">Happy Hour Daily</p>
+                <p className="text-sm">4:00 PM - 7:00 PM</p>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h4 className="text-lg font-bold mb-4">Quick Links</h4>
+              <div className="space-y-2">
+                <a href="#menu" className="block text-gray-400 hover:text-orange-500 transition">Menu</a>
+                <a href="#contact" className="block text-gray-400 hover:text-orange-500 transition">Reservations</a>
+                <a href="#" className="block text-gray-400 hover:text-orange-500 transition">Events</a>
+                <a href="#" className="block text-gray-400 hover:text-orange-500 transition">Catering</a>
+              </div>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h4 className="text-lg font-bold mb-4">Contact</h4>
+              <div className="text-gray-400 space-y-2">
+                <p>Calle 34 Nte 43</p>
+                <p>Playa del Carmen, Q.R.</p>
+                <p className="mt-4">(984) 123-4567</p>
+                <p>hello@zitlaceiba.com</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm mb-4 md:mb-0">
+              © 2026 Zitla Ceiba. All rights reserved.
+            </p>
+            <p className="text-gray-400 text-sm">
+              Website by <span className="text-orange-500 font-semibold">WebNet Crafters</span>
+            </p>
+          </div>
+        </div>
       </footer>
     </main>
   );
