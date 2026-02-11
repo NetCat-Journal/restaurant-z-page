@@ -1,4 +1,4 @@
-import Image from "next/image";
+import MenuItem from './components/MenuItem';
 
 export default function Home() {
   return (
@@ -58,6 +58,64 @@ export default function Home() {
                 <div className="text-gray-600">Rating</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* Menu Section */}
+      <section id="menu" className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-5xl font-bold text-center mb-4 text-gray-900">Our Menu</h2>
+          <p className="text-center text-gray-600 text-lg mb-12">
+            Authentic flavors crafted with passion
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <MenuItem
+              name="Gober Tacos"
+              description="Fresh shrimp with cilantro, lime, and chipotle aioli on soft corn tortillas"
+              price="14.99"
+              image="/img/taco-shrimp.jpg"
+            />
+            <MenuItem
+              name="Carne Asada"
+              description="Grilled steak with roasted vegetables and house chimichurri sauce"
+              price="18.99"
+              image="/img/steak.jpg"
+            />
+            <MenuItem
+              name="Shrimp Burger"
+              description="Crispy shrimp patty with avocado, lettuce, and chipotle mayo"
+              price="15.99"
+              image="/img/burger.jpg"
+            />
+            <MenuItem
+              name="Tuna Tostada"
+              description="Fresh tuna, avocado, cucumber, sesame seeds on crispy tortilla"
+              price="16.99"
+              image="/img/tuna.jpg"
+            />
+            <MenuItem
+              name="Seafood Tower"
+              description="Shrimp ceviche, mahi mahi, calamari, and fresh tuna"
+              price="24.99"
+              image="/img/seafood.jpg"
+            />
+            <MenuItem
+              name="Octopus Tacos"
+              description="Grilled octopus with pico de gallo, lime, and cilantro"
+              price="17.99"
+              image="/img/octopus.jpg"
+            />
+          </div>
+
+          {/* View Full Menu Button */}
+          <div className="text-center mt-12">
+            <a
+              href="#contact"
+              className="bg-orange-600 hover:bg-orange-700 text-white px-10 py-4 rounded-lg font-semibold text-lg inline-block transition-all hover:scale-105"
+            >
+              Order Now
+            </a>
           </div>
         </div>
       </section>
